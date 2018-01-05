@@ -2,6 +2,7 @@ package com.github.ipan97.springdatajpa.repository;
 
 import com.github.ipan97.springdatajpa.entity.Berita;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by Ipan Taupik Rahman.
@@ -10,5 +11,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * Project spring-data-jpa
  * Package com.github.ipan97.springdatajpa.repository
  */
+@Repository
 public interface BeritaRepository extends JpaRepository<Berita, Long> {
 }

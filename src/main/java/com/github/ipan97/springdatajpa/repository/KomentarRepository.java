@@ -2,6 +2,7 @@ package com.github.ipan97.springdatajpa.repository;
 
 import com.github.ipan97.springdatajpa.entity.Komentar;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * Project spring-data-jpa
  * Package com.github.ipan97.springdatajpa.repository
  */
+@Repository
 public interface KomentarRepository extends JpaRepository<Komentar, Long> {
     List<Komentar> findAllByEmail(String email);
 }
