@@ -49,7 +49,7 @@ public class App implements CommandLineRunner {
                 .email("ipan.rahman@wgs.co.id")
                 .nama("hari ini tidak panas tapi hujan")
                 .isi("anda kurang beruntung")
-                .berita(newBerita)
+                //.berita(newBerita)
                 .waktuPublikasi(new Date())
                 .build();
 
@@ -57,7 +57,7 @@ public class App implements CommandLineRunner {
                 .email("fazar@wgs.co.id")
                 .nama("Lorem Ipsum")
                 .isi("Lorem Ipsum")
-                .berita(newBerita)
+                // .berita(newBerita)
                 .waktuPublikasi(new Date())
                 .build();
         List<Komentar> addKomentarBerita = new ArrayList<>();

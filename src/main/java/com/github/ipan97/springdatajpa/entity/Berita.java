@@ -52,8 +52,19 @@ public class Berita implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date waktuPublikasi;
 
+/*
     @OneToMany(mappedBy = "berita", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
+    private List<Komentar> daftarKomentar;
+*/
+
+    @JsonIgnore
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "komentar_berita",
+            joinColumns = @JoinColumn(name = "id_berita", nullable = false),
+            inverseJoinColumns = @JoinColumn(name = "id_komentar", nullable = false)
+    )
     private List<Komentar> daftarKomentar;
 
 

@@ -49,7 +49,16 @@ public class Komentar implements Serializable {
     @Temporal(TemporalType.TIMESTAMP)
     private Date waktuPublikasi;
 
-    @ManyToOne
+/*  @ManyToOne
     @JoinColumn(name = "id_berita", nullable = false)
+    private Berita berita;
+*/
+
+    @ManyToOne
+    @JoinTable(
+            name = "komentar_berita",
+            joinColumns = @JoinColumn(name = "id_komentar", insertable = false, updatable = false),
+            inverseJoinColumns = @JoinColumn(name = "id_berita", insertable = false, updatable = false)
+    )
     private Berita berita;
 }
