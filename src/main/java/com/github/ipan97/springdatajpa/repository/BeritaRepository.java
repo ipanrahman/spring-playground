@@ -13,4 +13,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface BeritaRepository extends JpaRepository<Berita, Long> {
+    Berita findOneById(Long id);
 }

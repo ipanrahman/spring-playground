@@ -17,7 +17,8 @@ import java.util.Date;
  */
 @Entity
 @Table(name = "komentar")
-@Data
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

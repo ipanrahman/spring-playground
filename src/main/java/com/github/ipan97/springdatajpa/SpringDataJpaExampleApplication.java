@@ -1,7 +1,5 @@
 package com.github.ipan97.springdatajpa;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.ipan97.springdatajpa.entity.Berita;
 import com.github.ipan97.springdatajpa.entity.Komentar;
 import com.github.ipan97.springdatajpa.repository.BeritaRepository;
@@ -18,23 +16,20 @@ import java.util.List;
 
 @SpringBootApplication
 @Slf4j
-public class App implements CommandLineRunner {
+public class SpringDataJpaExampleApplication implements CommandLineRunner {
 
     private final BeritaRepository beritaRepository;
 
     private final KomentarRepository komentarRepository;
 
-    private final ObjectMapper mapper;
-
     @Autowired
-    public App(BeritaRepository beritaRepository, KomentarRepository komentarRepository, ObjectMapper mapper) {
+    public SpringDataJpaExampleApplication(BeritaRepository beritaRepository, KomentarRepository komentarRepository) {
         this.beritaRepository = beritaRepository;
         this.komentarRepository = komentarRepository;
-        this.mapper = mapper;
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(SpringDataJpaExampleApplication.class, args);
     }
 
     @Override
@@ -69,22 +64,14 @@ public class App implements CommandLineRunner {
 
         komentarRepository.findAllByEmail("ipan.rahman@wgs.co.id")
                 .forEach((komentar) -> {
-                    try {
-                        log.info("Data Komentar {}", mapper.writeValueAsString(komentar));
-                    } catch (JsonProcessingException e) {
-                        log.error(e.getMessage(), e);
-                    }
+                    log.info("Data Komentar {}", komentar.getNama());
                 });
 
-        Berita findBeritaById = beritaRepository.findOne(newBerita.getId());
+        Berita findBeritaById = beritaRepository.findOneById(newBerita.getId());
 
         if (findBeritaById != null) {
             findBeritaById.getDaftarKomentar().forEach((komentar) -> {
-                try {
-                    log.info("Daftar Komentar Berdasarkan Berita {}", mapper.writeValueAsString(komentar));
-                } catch (JsonProcessingException e) {
-                    log.error(e.getMessage(), e);
-                }
+                log.info("Daftar Komentar Berdasarkan Berita {}", komentar.getBerita());
             });
         }
     }

@@ -22,7 +22,8 @@ import java.util.List;
 
 @Entity
 @Table(name = "berita")
-@Data
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
