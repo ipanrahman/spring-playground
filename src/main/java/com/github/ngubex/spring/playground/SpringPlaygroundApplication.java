@@ -1,9 +1,9 @@
-package com.github.ipan97.springdatajpa;
+package com.github.ngubex.spring.playground;
 
-import com.github.ipan97.springdatajpa.entity.Berita;
-import com.github.ipan97.springdatajpa.entity.Komentar;
-import com.github.ipan97.springdatajpa.repository.BeritaRepository;
-import com.github.ipan97.springdatajpa.repository.KomentarRepository;
+import com.github.ngubex.spring.playground.repository.BeritaRepository;
+import com.github.ngubex.spring.playground.repository.KomentarRepository;
+import com.github.ngubex.spring.playground.entity.Berita;
+import com.github.ngubex.spring.playground.entity.Komentar;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,20 +16,20 @@ import java.util.List;
 
 @SpringBootApplication
 @Slf4j
-public class SpringDataJpaExampleApplication implements CommandLineRunner {
+public class SpringPlaygroundApplication implements CommandLineRunner {
 
     private final BeritaRepository beritaRepository;
 
     private final KomentarRepository komentarRepository;
 
     @Autowired
-    public SpringDataJpaExampleApplication(BeritaRepository beritaRepository, KomentarRepository komentarRepository) {
+    public SpringPlaygroundApplication(BeritaRepository beritaRepository, KomentarRepository komentarRepository) {
         this.beritaRepository = beritaRepository;
         this.komentarRepository = komentarRepository;
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringDataJpaExampleApplication.class, args);
+        SpringApplication.run(SpringPlaygroundApplication.class, args);
     }
 
     @Override

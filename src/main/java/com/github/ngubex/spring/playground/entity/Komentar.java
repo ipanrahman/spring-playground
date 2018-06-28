@@ -1,4 +1,4 @@
-package com.github.ipan97.springdatajpa.entity;
+package com.github.ngubex.spring.playground.entity;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;

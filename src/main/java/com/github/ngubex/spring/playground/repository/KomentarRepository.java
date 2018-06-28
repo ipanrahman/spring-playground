@@ -1,7 +1,6 @@
-package com.github.ipan97.springdatajpa.repository;
+package com.github.ngubex.spring.playground.repository;
 
-import com.github.ipan97.springdatajpa.entity.Komentar;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.github.ngubex.spring.playground.entity.Komentar;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 

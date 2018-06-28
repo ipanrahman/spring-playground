@@ -1,4 +1,4 @@
-package com.github.ipan97.springdatajpa;
+package com.github.ngubex.spring.playground;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
