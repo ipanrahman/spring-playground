@@ -2,6 +2,7 @@ package com.github.ipan97.springdatajpa.repository;
 
 import com.github.ipan97.springdatajpa.entity.Berita;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -12,6 +13,6 @@ import org.springframework.stereotype.Repository;
  * Package com.github.ipan97.springdatajpa.repository
  */
 @Repository
-public interface BeritaRepository extends JpaRepository<Berita, Long> {
+public interface BeritaRepository extends PagingAndSortingRepository<Berita, Long> {
     Berita findOneById(Long id);
 }

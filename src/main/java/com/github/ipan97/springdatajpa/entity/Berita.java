@@ -1,5 +1,6 @@
 package com.github.ipan97.springdatajpa.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
@@ -59,7 +60,7 @@ public class Berita implements Serializable {
     private List<Komentar> daftarKomentar;
 */
 
-    @JsonIgnore
+    @JsonBackReference
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
             name = "komentar_berita",
