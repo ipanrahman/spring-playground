@@ -1,4 +1,4 @@
-package com.github.ipan97.springdatajpa.controller;
+package com.github.ipan97.springdatajpa.controller.api;
 
 import com.github.ipan97.springdatajpa.repository.KomentarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
