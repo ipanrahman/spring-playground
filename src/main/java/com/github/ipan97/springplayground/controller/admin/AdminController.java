@@ -1,4 +1,4 @@
-package com.github.ngubex.spring.playground.controller.admin;
+package com.github.ipan97.springplayground.controller.admin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,7 +1,7 @@
-package com.github.ngubex.spring.playground.controller.api;
+package com.github.ipan97.springplayground.controller.api;
 
-import com.github.ngubex.spring.playground.entity.Berita;
-import com.github.ngubex.spring.playground.repository.BeritaRepository;
+import com.github.ipan97.springplayground.entity.Berita;
+import com.github.ipan97.springplayground.repository.BeritaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.MediaType;

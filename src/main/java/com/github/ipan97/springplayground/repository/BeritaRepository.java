@@ -1,6 +1,7 @@
-package com.github.ngubex.spring.playground.repository;
+package com.github.ipan97.springplayground.repository;
 
-import com.github.ngubex.spring.playground.entity.Berita;
+import com.github.ipan97.springplayground.entity.Berita;
+
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,9 +1,9 @@
-package com.github.ngubex.spring.playground;
+package com.github.ipan97.springplayground;
 
-import com.github.ngubex.spring.playground.repository.BeritaRepository;
-import com.github.ngubex.spring.playground.repository.KomentarRepository;
-import com.github.ngubex.spring.playground.entity.Berita;
-import com.github.ngubex.spring.playground.entity.Komentar;
+import com.github.ipan97.springplayground.repository.BeritaRepository;
+import com.github.ipan97.springplayground.repository.KomentarRepository;
+import com.github.ipan97.springplayground.entity.Berita;
+import com.github.ipan97.springplayground.entity.Komentar;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

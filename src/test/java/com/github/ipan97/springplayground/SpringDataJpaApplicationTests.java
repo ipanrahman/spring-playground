@@ -1,4 +1,4 @@
-package com.github.ngubex.spring.playground;
+package com.github.ipan97.springplayground;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

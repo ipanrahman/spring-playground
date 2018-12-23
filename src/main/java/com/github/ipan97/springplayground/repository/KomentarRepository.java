@@ -1,6 +1,7 @@
-package com.github.ngubex.spring.playground.repository;
+package com.github.ipan97.springplayground.repository;
 
-import com.github.ngubex.spring.playground.entity.Komentar;
+import com.github.ipan97.springplayground.entity.Komentar;
+
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 

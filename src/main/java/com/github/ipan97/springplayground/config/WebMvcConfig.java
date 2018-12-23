@@ -1,4 +1,4 @@
-package com.github.ngubex.spring.playground.config;
+package com.github.ipan97.springplayground.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

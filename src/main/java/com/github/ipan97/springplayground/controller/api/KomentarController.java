@@ -1,6 +1,6 @@
-package com.github.ngubex.spring.playground.controller.api;
+package com.github.ipan97.springplayground.controller.api;
 
-import com.github.ngubex.spring.playground.repository.KomentarRepository;
+import com.github.ipan97.springplayground.repository.KomentarRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.MediaType;
