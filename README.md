@@ -1,2 +1,6 @@
-# spring-data-jpa-example
-Belajar Spring Boot dengan Spring Data JPA
+# spring-playground
+
+## Spring Playground
+* Spring Boot
+* Spring Data JPA
+* Spring Boot Thymeleaf
