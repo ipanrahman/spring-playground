@@ -1,4 +1,4 @@
-package com.github.ipan97.springplayground.entity;
+package com.github.ipan97.springplayground.domain;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;

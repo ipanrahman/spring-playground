@@ -1,6 +1,6 @@
 package com.github.ipan97.springplayground.repository;
 
-import com.github.ipan97.springplayground.entity.Komentar;
+import com.github.ipan97.springplayground.domain.Komentar;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;

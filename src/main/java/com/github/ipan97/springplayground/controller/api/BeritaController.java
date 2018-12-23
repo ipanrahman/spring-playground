@@ -1,6 +1,6 @@
 package com.github.ipan97.springplayground.controller.api;
 
-import com.github.ipan97.springplayground.entity.Berita;
+import com.github.ipan97.springplayground.domain.Berita;
 import com.github.ipan97.springplayground.repository.BeritaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;

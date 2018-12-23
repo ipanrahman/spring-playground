@@ -2,8 +2,8 @@ package com.github.ipan97.springplayground;
 
 import com.github.ipan97.springplayground.repository.BeritaRepository;
 import com.github.ipan97.springplayground.repository.KomentarRepository;
-import com.github.ipan97.springplayground.entity.Berita;
-import com.github.ipan97.springplayground.entity.Komentar;
+import com.github.ipan97.springplayground.domain.Berita;
+import com.github.ipan97.springplayground.domain.Komentar;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

@@ -1,4 +1,4 @@
-package com.github.ipan97.springplayground.entity;
+package com.github.ipan97.springplayground.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

@@ -1,6 +1,6 @@
 package com.github.ipan97.springplayground.repository;
 
-import com.github.ipan97.springplayground.entity.Berita;
+import com.github.ipan97.springplayground.domain.Berita;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
